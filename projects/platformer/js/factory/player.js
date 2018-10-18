@@ -130,7 +130,7 @@
                 asset.body.bounce.y = 0;
                 game.add.tween(asset.body).to( { y: asset.body.y -100 }, 1000, Phaser.Easing.Linear.None, true);
 
-                asset.body.velocity.x = 200 * _direction;
+                asset.body.velocity.x = 100 * _direction;
                 asset.x += xOffset * _direction;
                 asset.y += yOffset;
             };
@@ -167,7 +167,7 @@
          */
         function run() {
             asset.scale.x = _direction;
-            asset.body.velocity.x = 200 * _direction;
+            asset.body.velocity.x = 1000 * _direction;
             asset.animations.play('run');
             setState(_run);
         }
